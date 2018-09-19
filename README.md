@@ -1,7 +1,7 @@
 # USAGE
 - Clone to local directory
 - Run the run_blockchain.py file 
-	# ./run_blockchain.py
+	## ./run_blockchain.py
 - It will prompt you for senders address, receipents address and amount.
 - If you want to change the difficulty:
 	- Open run_blockchain.py
