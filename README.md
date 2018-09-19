@@ -1,3 +1,6 @@
+# snoothlearningblockchain
+# python blockchain script that I wrote to help me learn/understand the concept of blockchain
+
 # USAGE
 - Clone to local directory
 - Run the run_blockchain.py file 
@@ -6,11 +9,10 @@
 - If you want to change the difficulty:
 	- Open run_blockchain.py
 	- change "difficulty" level to the number of '0's you want to try and solve. 
-	# vim run_blockchain.py
-	# difficulty = '00' # this is set to default
+	## vim run_blockchain.py
+	## difficulty = '00' # this is set to default
 
-# snoothlearningblockchain
-# python blockchain script that I wrote to help me learn/understand the concept of blockchain
+
 #!/usr/bin/env python
 
 # VERY simple demo of BlockChain + Proof of Work concept using sha256 hashing
