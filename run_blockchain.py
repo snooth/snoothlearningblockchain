@@ -1,5 +1,3 @@
-# snoothlearningblockchain
-# python blockchain script that I wrote to help me learn/understand the concept of blockchain
 #!/usr/bin/env python
 
 # VERY simple demo of BlockChain + Proof of Work concept using sha256 hashing
@@ -14,17 +12,19 @@ import re
 import os
 import nonce_gen
 import getPrevHash
+import filecheck
 
+getfile = filecheck.checkFile()
+nonce = nonce_gen.generate_nonce()
+getHash = getPrevHash.getPHash()
 sender = raw_input("What is the sender's privatekey?  \n")
 receiver = raw_input("What is the receipient's wallet address?  \n")
 amount = raw_input("How much do you want to send?   \n")
-getHash = getPrevHash.getPHash()
-nonce = nonce_gen.generate_nonce()
 
 challenge = getHash + nonce
 #challenge = str(sender)+str(receiver)+str(nonce)
 #challenge = '9K3hdiHGEEFSdfewefdf3Fdfh354Gf3df2efg22wegy434tfaseEwfF'
-difficulty = '00'
+difficulty = '0000'
 
 ## this function generations a random string of characters to create a #hash (256Bit number or 32octects)
 def gen_String(challenge=challenge,size=32):
